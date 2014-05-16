@@ -2,4 +2,7 @@
 Debian:
   pkgs:
     - vim
+RedHat:
+  pkgs:
+    - vim-enhanced
 {% endload %}
