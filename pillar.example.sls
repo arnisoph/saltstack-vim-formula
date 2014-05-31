@@ -1,2 +1,5 @@
 vim:
-  lookup:
+  config:
+    manage:
+      users:
+        - root
