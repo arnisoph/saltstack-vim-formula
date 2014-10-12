@@ -6,10 +6,7 @@
 vim:
   pkg:
     - installed
-    - pkgs:
-{% for p in datamap['pkgs'] %}
-      - {{ p }}
-{% endfor %}
+    - pkgs: {{ datamap.pkgs }}
 
 {% for u in salt['pillar.get']('vim:config:manage:users', []) %}
 vimrc_{{ u }}:
